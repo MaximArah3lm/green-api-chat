@@ -1,0 +1,17 @@
+@reference '../../../styles/theme.css';
+
+.avatar {
+  @apply flex shrink-0 items-end justify-center overflow-hidden rounded-full bg-avatar;
+
+  &__icon {
+    @apply size-4/5 text-white;
+  }
+
+  &_sm {
+    @apply size-10;
+  }
+
+  &_md {
+    @apply size-12;
+  }
+}

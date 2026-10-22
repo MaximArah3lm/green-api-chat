@@ -1,0 +1,18 @@
+@reference '../../../styles/theme.css';
+
+.input {
+  @apply flex flex-col gap-2;
+
+  &__label {
+    @apply text-xs text-muted;
+  }
+
+  &__field {
+    @apply h-10 rounded-lg border border-line bg-panel px-3 text-base outline-none;
+    @apply transition-colors duration-150 placeholder:text-placeholder focus:border-accent;
+  }
+
+  &__hint {
+    @apply text-xs text-muted;
+  }
+}

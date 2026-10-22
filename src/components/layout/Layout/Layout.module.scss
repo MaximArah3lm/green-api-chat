@@ -1,0 +1,27 @@
+@reference '../../../styles/theme.css';
+
+.layout {
+  @apply h-full min-[1440px]:py-5;
+
+  &__container {
+    @apply mx-auto flex h-full max-w-[1600px] overflow-hidden bg-panel shadow-app;
+  }
+
+  &__sidebar {
+    @apply flex min-w-[300px] max-w-[420px] shrink-0 grow-0 basis-[30%] flex-col border-r border-line;
+    @apply max-md:max-w-none max-md:basis-full max-md:border-r-0;
+  }
+
+  &__main {
+    @apply flex min-w-0 flex-1 flex-col max-md:hidden;
+  }
+
+  // на мобилке либо список, либо чат
+  &_chatOpen &__sidebar {
+    @apply max-md:hidden;
+  }
+
+  &_chatOpen &__main {
+    @apply max-md:flex;
+  }
+}

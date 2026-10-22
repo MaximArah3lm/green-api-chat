@@ -1,0 +1,41 @@
+@import 'tailwindcss/theme.css';
+
+@theme {
+  --font-sans: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --color-app: #dcdcd4;
+  --color-panel: #ffffff;
+  --color-panel-header: #f0f2f5;
+  --color-line: #e9edef;
+  --color-chat: #efeae2;
+  --color-bubble-in: #ffffff;
+  --color-bubble-out: #d9fdd3;
+  --color-main: #111b21;
+  --color-muted: #667781;
+  --color-title: #41525d;
+  --color-placeholder: #8696a0;
+  --color-accent: #00a884;
+  --color-accent-hover: #008f6f;
+  --color-danger: #d61c4e;
+  --color-danger-light: #fdeef2;
+  --color-hover: #f5f6f6;
+  --color-active: #e9edef;
+  --color-avatar: #dfe5e7;
+  --color-welcome: #f7f8fa;
+
+  --shadow-bubble: 0 1px 0.5px rgb(11 20 26 / 0.13);
+  --shadow-card: 0 16px 48px rgb(11 20 26 / 0.19);
+  --shadow-app: 0 4px 16px rgb(11 20 26 / 0.05);
+
+  --spacing-header: 60px;
+}
+
+@utility scrollbar-thin {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(11 20 26 / 0.2);
+  }
+}

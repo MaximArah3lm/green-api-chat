@@ -1,0 +1,30 @@
+@reference '../../../../styles/theme.css';
+
+.loginForm {
+  @apply flex w-full max-w-[400px] flex-col rounded-lg bg-panel px-9 py-10 shadow-card;
+  @apply max-[480px]:px-5 max-[480px]:py-7;
+
+  &__title {
+    @apply mb-2 text-2xl font-normal text-title;
+  }
+
+  &__subtitle {
+    @apply mb-7 text-base text-muted;
+  }
+
+  &__link {
+    @apply text-accent hover:underline;
+  }
+
+  &__fields {
+    @apply flex flex-col gap-4;
+  }
+
+  &__error {
+    @apply mt-4 rounded-lg bg-danger-light px-3 py-3 text-xs leading-4 text-danger;
+  }
+
+  &__submit {
+    @apply mt-6 self-start;
+  }
+}

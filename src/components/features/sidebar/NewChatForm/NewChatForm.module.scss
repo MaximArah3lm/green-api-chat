@@ -1,0 +1,13 @@
+@reference '../../../../styles/theme.css';
+
+.newChat {
+  @apply border-b border-line bg-panel p-4;
+
+  &__error {
+    @apply mt-2 text-xs leading-4 text-danger;
+  }
+
+  &__actions {
+    @apply mt-3 flex justify-end;
+  }
+}

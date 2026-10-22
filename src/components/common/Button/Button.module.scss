@@ -1,0 +1,20 @@
+@reference '../../../styles/theme.css';
+
+.button {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 transition duration-150;
+  @apply disabled:cursor-default disabled:opacity-60;
+
+  &_primary {
+    @apply h-10 rounded-full bg-accent px-6 text-base font-medium text-white;
+    @apply enabled:hover:bg-accent-hover;
+  }
+
+  &_icon {
+    @apply size-10 rounded-full text-muted;
+    @apply enabled:hover:bg-black/8;
+  }
+
+  &_loading {
+    @apply disabled:cursor-progress;
+  }
+}

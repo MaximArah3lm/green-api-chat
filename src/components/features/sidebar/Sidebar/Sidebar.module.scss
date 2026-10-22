@@ -1,0 +1,25 @@
+@reference '../../../../styles/theme.css';
+
+.sidebar {
+  @apply flex h-full min-h-0 flex-col;
+
+  &__header {
+    @apply flex h-header shrink-0 items-center justify-between bg-panel-header pr-2 pl-4;
+  }
+
+  &__info {
+    @apply flex min-w-0 flex-col;
+  }
+
+  &__title {
+    @apply text-base font-medium;
+  }
+
+  &__instance {
+    @apply truncate text-xs text-muted;
+  }
+
+  &__actions {
+    @apply flex gap-1;
+  }
+}

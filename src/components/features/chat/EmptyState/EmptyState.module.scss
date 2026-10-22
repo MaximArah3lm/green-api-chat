@@ -1,0 +1,18 @@
+@reference '../../../../styles/theme.css';
+
+.emptyState {
+  @apply flex flex-1 flex-col items-center justify-center bg-welcome p-6 text-center;
+  @apply border-b-4 border-accent;
+
+  &__picture {
+    @apply mb-7;
+  }
+
+  &__title {
+    @apply mb-3 text-[28px] font-light text-title;
+  }
+
+  &__text {
+    @apply max-w-[420px] text-base text-muted;
+  }
+}

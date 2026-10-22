@@ -1,0 +1,39 @@
+@reference '../../../../styles/theme.css';
+
+.chatItem {
+  @apply flex h-[72px] w-full cursor-pointer items-center gap-3 bg-panel px-4 text-left;
+  @apply hover:bg-hover;
+
+  &_active {
+    @apply bg-active hover:bg-active;
+  }
+
+  &__body {
+    @apply flex h-full min-w-0 flex-1 flex-col justify-center gap-1 border-b border-line pr-1;
+  }
+
+  &__row {
+    @apply flex items-center justify-between gap-2;
+  }
+
+  &__title {
+    @apply truncate text-base text-main;
+  }
+
+  &__date {
+    @apply shrink-0 text-xs text-muted;
+
+    &_unread {
+      @apply text-accent;
+    }
+  }
+
+  &__preview {
+    @apply truncate text-base text-muted;
+  }
+
+  &__badge {
+    @apply h-5 min-w-5 shrink-0 rounded-full bg-accent px-1;
+    @apply text-center text-xs leading-5 font-semibold text-white;
+  }
+}

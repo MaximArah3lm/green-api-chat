@@ -1,0 +1,11 @@
+@reference '../../styles/theme.css';
+
+.loginPage {
+  @apply relative isolate flex min-h-full flex-col items-center bg-panel-header px-4 pb-10;
+  @apply before:absolute before:inset-x-0 before:top-0 before:-z-10 before:h-[220px] before:bg-accent;
+
+  &__logo {
+    @apply flex h-[120px] w-full max-w-[400px] items-center;
+    @apply text-base font-semibold tracking-wide text-white uppercase;
+  }
+}

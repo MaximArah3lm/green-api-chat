@@ -1,0 +1,9 @@
+@reference '../../../../styles/theme.css';
+
+.chatList {
+  @apply scrollbar-thin flex-1 overflow-y-auto;
+
+  &__empty {
+    @apply px-6 py-8 text-center text-base text-muted;
+  }
+}

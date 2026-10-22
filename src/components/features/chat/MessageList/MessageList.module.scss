@@ -1,0 +1,11 @@
+@reference '../../../../styles/theme.css';
+
+.messageList {
+  @apply scrollbar-thin flex-1 overflow-y-auto bg-chat px-[7%] py-5;
+  @apply max-md:px-3 max-md:py-3;
+  @apply bg-[radial-gradient(rgb(11_20_26/0.04)_1px,transparent_1px)] bg-size-[16px_16px];
+
+  &__empty {
+    @apply mx-auto w-fit rounded-lg bg-white px-3 py-1 text-xs text-title shadow-bubble;
+  }
+}

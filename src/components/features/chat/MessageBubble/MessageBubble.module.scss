@@ -1,0 +1,39 @@
+@reference '../../../../styles/theme.css';
+
+.message {
+  @apply mb-1 flex flex-col items-start;
+
+  &__bubble {
+    @apply flex max-w-[65%] flex-wrap items-end justify-end gap-x-2 rounded-lg bg-bubble-in;
+    @apply px-2 py-1 shadow-bubble max-md:max-w-[85%];
+  }
+
+  &__text {
+    @apply min-w-0 flex-initial text-base leading-5 wrap-anywhere whitespace-pre-wrap;
+  }
+
+  &__meta {
+    @apply ml-auto inline-flex items-center gap-1 text-xs leading-4;
+    @apply whitespace-nowrap text-muted;
+  }
+
+  &__status {
+    @apply size-4;
+  }
+
+  &__retry {
+    @apply mt-1 cursor-pointer text-xs text-danger hover:underline;
+  }
+
+  &_out {
+    @apply items-end;
+  }
+
+  &_out &__bubble {
+    @apply bg-bubble-out;
+  }
+
+  &_error &__status {
+    @apply text-danger;
+  }
+}

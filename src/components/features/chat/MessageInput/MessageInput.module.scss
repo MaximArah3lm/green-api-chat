@@ -1,0 +1,15 @@
+@reference '../../../../styles/theme.css';
+
+.messageInput {
+  @apply flex shrink-0 items-end gap-2 bg-panel-header px-4 py-3;
+  @apply max-md:px-2 max-md:py-2;
+
+  &__field {
+    @apply scrollbar-thin max-h-[120px] min-h-11 flex-1 resize-none rounded-lg bg-panel;
+    @apply px-3 py-3 text-base leading-5 outline-none placeholder:text-placeholder;
+  }
+
+  &__send {
+    @apply shrink-0 enabled:text-accent;
+  }
+}

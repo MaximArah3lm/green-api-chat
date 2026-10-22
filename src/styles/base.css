@@ -1,0 +1,12 @@
+@import './theme.css';
+@import 'tailwindcss/preflight.css';
+
+html,
+body,
+#root {
+  @apply h-full;
+}
+
+body {
+  @apply bg-app font-sans text-base text-main antialiased;
+}

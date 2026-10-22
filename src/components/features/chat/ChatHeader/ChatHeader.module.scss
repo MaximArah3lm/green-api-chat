@@ -1,0 +1,18 @@
+@reference '../../../../styles/theme.css';
+
+.chatHeader {
+  @apply flex h-header shrink-0 items-center gap-3 border-l border-line bg-panel-header px-4;
+  @apply max-md:border-l-0;
+
+  &__back {
+    @apply -ml-2 hidden max-md:inline-flex;
+  }
+
+  &__info {
+    @apply min-w-0;
+  }
+
+  &__title {
+    @apply block truncate text-base text-main;
+  }
+}

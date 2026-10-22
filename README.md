@@ -1,6 +1,6 @@
 # GREEN-API Chat
 
-**Демо:** https://<username>.github.io/green-api-chat/
+**Демо:** [https://maximarah3lm.github.io/green-api-chat/](https://maximarah3lm.github.io/green-api-chat/)
 
 Тестовое задание на позицию «Фронтенд-разработчик React».
 
@@ -44,8 +44,8 @@
 Нужен Node.js 20.19+ или 22.12+.
 
 ```bash
-git clone https://github.com/<username>/<repo>.git
-cd <repo>
+git clone https://github.com/MaximArah3lm/<repo>.git
+cd green-api-chat
 npm install
 cp .env.example .env
 npm run dev
